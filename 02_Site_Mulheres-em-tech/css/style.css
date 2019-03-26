@@ -33,6 +33,32 @@ body {
     text-transform: uppercase;
 }
 
+
+.menu {
+    list-style: none;
+    margin: 0;
+}
+
+.menu_item {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+
+.menu_item > a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #9813FE;
+    font-weight: bold;
+}
+
+/* esse é um blobo condicional, o browser vai ler e mostrar... */
+@media (max-width: 420px) {
+    .menu{
+        display: none;
+    }
+}
+
 .logo {
     width: 150px;
 }
@@ -41,6 +67,7 @@ body {
     width: 100px;
     margin: 0 20px;
 }
+
 .conteudo__container {
     margin: 0 auto;
     width: 800px;
@@ -50,7 +77,10 @@ body {
 
 .conteudo {
     margin-top: 30px;
+    align-items: center;
+    justify-content: center;
 }
+
 .autora__foto {
     width: 150px;
     margin: 0 auto;

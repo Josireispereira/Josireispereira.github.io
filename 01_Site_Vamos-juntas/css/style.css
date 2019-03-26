@@ -1,0 +1,81 @@
+body { /* Vai aplicar esses estilos a tudo que estiver dentro do body */
+    background-color: rgba(179, 130, 186, 36%); /*Uma das formas de selecionar cor, essa pode escolher a opacidade */
+    font-family: 'Montserrat', sans-serif;
+}
+
+.cabecalho {
+    text-align: center;
+}
+
+.cabecalho__titulo-pagina {
+    color: #5d1277;
+    font-weight: bold;
+}
+
+.container {
+    width: 71%;
+    margin-top: 5%;
+    margin: 0 auto; /* Truque pra centralizar, só funciona com elementos block */
+}
+
+.container__conteudo, .container__ilustracao {
+    display: inline-block;
+    width: 40%;
+    margin: 3%;
+    vertical-align: middle;
+}
+
+.container__ilustracao > img { /* seleciona as tags img dentro da classe .conteudo-principal__imagem */
+    width: 100%;
+}
+
+.conteudo__btn--roxo {
+    background-color: #5d1277;
+    text-transform: uppercase;
+    margin: 3%;
+    font-size: 14px;
+    padding: 5%;
+    color: white;
+    border: 1px solid #5d1277; /* Borda ao redor do elemento. Primeiro define a largura da borda, depois o estilo, por último a cor */
+}
+
+.conteudo__btn--transparente {
+    background-color: transparent;
+    text-transform: uppercase;
+    margin: 3%;
+    font-size: 14px;
+    padding: 5%;
+    color: #5d1277; /* Outra forma muito comum de escolher a cor, pelo código HEX */
+    border: 1px solid #5d1277; /* Borda ao redor do elemento. Primeiro define a largura da borda, depois o estilo, por último a cor */
+}
+
+@media (max-width: 768px) {
+
+    .cabecalho__subtitulo {
+        margin-bottom: 0;
+    }
+
+    .container {
+    width: 100%;
+    }
+
+    .container__conteudo {
+    width: 92%;
+    margin: 0;
+    padding: 5% 4% 0 4%;
+    text-align: center;
+    }
+
+    .container__ilustracao {
+    width: 92%;
+    margin: 0;
+    padding: 5% 4% 5% 4%;
+    text-align: center;
+    }
+}
+
+@media (max-width: 420) {
+    .container__conteudo > p {
+    font-size: 9px;
+    }
+}
