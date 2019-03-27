@@ -3,52 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <title>Mulheres em Tech</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <nav class="navegacao">
         <img src="./img/logo.png" alt="Mulheres em Tech" class="logo">
-
         <ul class="menu">
-            <li>
-                <a href="index.html" class="menu__link">Home</a> 
-            </li>
-            <li class="menu__link"> Sobre</li>
-            <li>
-                <a href="http://linkedin.com/in/josireis" target="_blank" class="menu__link">Contato</a>
-            </li>
+            <li class="menu__item"><a href="#">Sobre</a></li>
+            <li class="menu__item"><a href="#">Conteúdo</a></li>
+            <li class="menu__item"><a href="#">Contato</a></li>
         </ul>
     </nav>
+    
+    <main>
+        <section class="conteudo">
+                <aside class="autora">
+                    <figure>
+                        <img src="./img/autora.jpg" alt="Foto da autora" class="foto--redonda">
+                        <figcaption class="legenda">
+                            <p class="legenda__texto"><span class="legenda__autora--destacado">Josi Reis</span>, animadora e programadora</p>
+                        </figcaption>
+                    </figure>
+                </aside>
+        
+                <article class="post">
+                    <h2 class="titulo-post">Conheça mulheres que fizeram história na computação</h2>
+                    <ol>
+                        <li>Ada Lovelace</li>
+                        <li>Grace Hopper</li>
+                        <li>Karen Sparck Jones</li>
+                    </ol>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores aliquam ipsum natus deserunt excepturi hic molestias, labore quas culpa modi magni unde veritatis eligendi eum impedit eaque porro, officiis dignissimos.</p>
+                </article>
+        </section>
+    </main>
 
-    <section class="conteudo" > 
-        <div class="conteudo__container">   
-            <aside class="autora">
-                <img src="./img/autora.jpg" alt="Foto de Hermione Granger" title="Foto de Hermione Granger" class="autora__foto">
-
-                <p><span class="autora__nome">Hermione Granger</span>, bruxa e programadora</p>
-            </aside>
-
-            <article class="artigo">
-                <h3>Conheça mulheres na tecnologia</h3>
-                <ol>
-                    <li>Ada Lovelace</li>
-                    <li>Margareth Hamilton</li>
-                    <li>Grace Hopper</li>
-
-                </ol>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi ex eaque cum sunt saepe consectetur porro dolorum consequatur officia iste, optio ab fugit molestias laborum expedita asperiores dolores exercitationem, sapiente commodi in delectus distinctio possimus nam? Nostrum quia amet atque!</p>
-            </article>
-
-        </div>
-
-    </section> 
-
-    <footer class="rodape">
-        <img src="./img/reprograma.png" alt="Logo Reprograma" title="Reprograma" class="logo--pequeno">
-        <p>Desenvolvido pela Josi</p>
+    <footer class="footer">
+        <img src="./img/reprograma.png" alt="Logo da Reprograma" class="logo logo--pequeno">
+        <p class="creditos">Desenvolvido pela Reprograma</p>
     </footer>
 </body>
 </html>

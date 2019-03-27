@@ -3,53 +3,116 @@ body { /* Vai aplicar esses estilos a tudo que estiver dentro do body */
     font-family: 'Montserrat', sans-serif;
 }
 
-.cabecalho {
+.titulo-pagina {
     text-align: center;
-}
-
-.cabecalho__titulo-pagina {
-    color: #5d1277;
-    font-weight: bold;
+    color: purple;
 }
 
 .container {
-    width: 71%;
-    margin-top: 5%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.conteudo {
+    width: 70.3125%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 0 auto; /* Truque pra centralizar, só funciona com elementos block */
 }
 
-.container__conteudo, .container__ilustracao {
+.subtitulo {
+    text-align: center;
+}
+
+.chamada, .ilustracao {
+    width: 44.44%;
     display: inline-block;
-    width: 40%;
-    margin: 3%;
+    margin: 5%;
     vertical-align: middle;
 }
 
-.container__ilustracao > img { /* seleciona as tags img dentro da classe .conteudo-principal__imagem */
+.ilustracao > img { /* seleciona as tags img dentro da classe .conteudo-principal__imagem */
     width: 100%;
 }
 
-.conteudo__btn--roxo {
-    background-color: #5d1277;
-    text-transform: uppercase;
-    margin: 3%;
-    font-size: 14px;
-    padding: 5%;
-    color: white;
+.call-to-action {
+    margin-top: 40px;
+}
+
+.btn {
+    margin: 2%;
+    padding: 20px;
+    text-decoration: none; /* Tira o sublinhado do link */
+    text-transform: uppercase; /*Deixa todas as letras maiúsculas sem prejudicar a acessibilidade */
     border: 1px solid #5d1277; /* Borda ao redor do elemento. Primeiro define a largura da borda, depois o estilo, por último a cor */
 }
 
-.conteudo__btn--transparente {
-    background-color: transparent;
-    text-transform: uppercase;
-    margin: 3%;
-    font-size: 14px;
-    padding: 5%;
-    color: #5d1277; /* Outra forma muito comum de escolher a cor, pelo código HEX */
-    border: 1px solid #5d1277; /* Borda ao redor do elemento. Primeiro define a largura da borda, depois o estilo, por último a cor */
+.btn--saiba-mais {
+    background-color: #5d1277;
+    color: white;
 }
+
+.btn--participe {
+    color: #5d1277; /* Outra forma muito comum de escolher a cor, pelo código HEX */
+}
+
+
+@media (max-width: 420px) {
+    .call-to-action {
+       display: flex;
+       justify-content: center;
+       flex-wrap: wrap;
+    }
+
+    .btn {
+        padding: 20px;
+        text-decoration: none;
+        text-transform: uppercase;
+        border: 1px solid #5d1277;
+    }
+
+    .ilustracao {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+}
+
 
 @media (max-width: 768px) {
+
+    .conteudo {
+        display: flex;
+        text-align: center;
+        flex-wrap: wrap;
+    }
+
+    .call-to-action: {
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: center;
+    }
+
+    .btn {
+        margin: 2vw;
+    }
+
+    .btn--saiba-mais {
+        background-color: #5d1277;
+        color: white;
+    
+    }
+
+    .chamada, .ilustracao {
+        width: 100%;
+        display: block;
+    }
+}
+
+/* @media (max-width: 768px) { 
 
     .cabecalho__subtitulo {
         margin-bottom: 0;
@@ -78,4 +141,4 @@ body { /* Vai aplicar esses estilos a tudo que estiver dentro do body */
     .container__conteudo > p {
     font-size: 9px;
     }
-}
+} */

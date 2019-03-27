@@ -1,39 +1,48 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+<head>
+    <!-- Meta tags não precisam de fechamento -->
+    <!-- A tag abaixo é uma meta, charset é um atributo e UTF-8 é o valor do atributo-->
+    <!-- Definicao de caracteres com acento -->
+    <meta charset="UTF-8">
+    <meta name="author" content="Milena Martins">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Primeiro exercício da turma 7 da Reprograma">
+    <title>Minha primeira página</title>
 
-    <head>
-        <meta charset="UTF=8">
-        <meta name="author" content="Josi Reis">
-        <meta name="description" content="Primeiro exercício da turma 7 da Reprograma">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Vamos Juntas!</title>
-
-        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-        <link rel="stylesheet" href="./css/style.css">
-    </head>
-
-    <body>
-        <header class="cabecalho">
-            <h1 class="cabecalho__titulo-pagina">Vamos Juntas!</h1>
-            <h2 class="cabecalho__subtitulo">Reprograma Turma 7</h2>
-        </header>
-
-        <section class="container">
-            <div class="container__conteudo">
-                <h3 class="conteudo__subtitulo">Vamos ser codivas de front!</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique quaerat omnis minima non, ab veritatis voluptatum voluptate molestias ipsa iure earum perferendis quis ratione. Neque repellendus earum harum doloremque rerum!</p>   
-            
-
-                 <div class="btn">
-                    <button class="conteudo__btn--roxo">Saiba mais</button>
-                    <button class="conteudo__btn--transparente">Participe</button>
-                </div>
-            </div>
-
-            <div class="container__ilustracao">
-                    <img src="img/mulheres.gif" alt="Gif mulheres se ajudando e dando incentivo">
+    <!-- Aqui referenciamos a fonte que vamos usar -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <!-- Aqui estamos conectando o HTML ao nosso CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <!-- Aqui no body podemos começar a desenhar nossa página pra valor, com o que vai aparecer na tela -->
+    <!-- O header é o cabeçalho da página, onde colocamos o que é o primeiro destaque, como nome e imagem de abertura -->
+    <!-- O h1 é o título principal e só deve aparecer uma vez por página -->
         
+    <header>
+        <h1 class="titulo-pagina">Reprograma Turma 7</h1>
+        <h2 class="subtitulo">Aqui vai um subtítulo</h2>
+    </header>
+
+<div class="container">
+    <!-- A section define uma seção da sua página. Serve apenas para definir conteúdo que deve ficar junto -->
+    <section class="conteudo">
+        <div class="chamada">
+            <h3>Título do texto</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum sapiente, amet sequi iusto in expedita, recusandae, ipsa quasi accusamus molestias aspernatur? Reiciendis fugiat adipisci expedita odit optio esse iusto ipsa.</p>
+
+            <div class="call-to-action">
+                <a href="http://reprograma.com.br" target="_blank" class="btn btn--saiba-mais">Saiba mais</a>
+                <a href="http://reprograma.com.br" target="_blank" class="btn btn--participe">Participe</a>
             </div>
-        </section>
-    </body>
+        </div>
+
+        <div class="ilustracao">
+            <img src="./img/mulheres.gif" alt="Gif de mulheres se ajudando e dando incentivo">
+        </div>
+    </section>
+</div>
+
+</body>
 </html>
