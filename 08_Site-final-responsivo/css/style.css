@@ -1,82 +1,96 @@
-body {
-    font-family: 'Nunito',sans-serif;
-}
-
-.conteudo {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items:center;
-    padding: 20px 0;
-    background-color: #a0bed0;
-}
-
-.navegacao {
-    list-style: none;
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+}
+
+.nav {
+    text-align: right;
+    width: 100%;
+    background-color: #a0bed0;
+    position: fixed;
+    top: 0;
+}
 
 .menu__lista {
     list-style: none;
-    color: white;
-    font-weight: bold;
-    justify-content: flex-end;
-    align-items: ;
+    margin: 0;
+}
+
+.menu__lista > li {
+    display: inline-block;
+    padding: 35px 25px;
 }
 
 .menu__lista_item > a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.banner {
+    margin-top: 92px;
+    min-height: 78vh;
+    width: 100vw;
+    background: url(../img/foto-banner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.destaque {
+    background-color: rgba(22, 22, 22, .8);
+    color: white;
+    height: 250px;
+}
+
+/* 
+.mosaico {
+} */
+
+.mosaico_siberia {
+    width: 80%;
+    margin: 0 auto; 
     display: flex;
-    text-decoration: none;
-    text-transform: uppercase;
+    align-items: center;
 }
 
-.menu__item {
-    display: inline-block;
-    margin: 0 10px;
+.mosaico_siberia img {
+    width: 750px;
 }
 
-.menu__item > a {
-    text-decoration: none;
-    text-transform: uppercase;
-    color: #9013FE;
-    font-weight: bold;
+.lugares_gelados {
+    width: 80%;
+    margin: 0 auto;
 }
 
-.mundo-gelado {
-    text-transform: uppercase;
-    font-weight: bold;
+.mosaico_gelado {
+    display: flex;
+    align-items: center;
+    background-color: #161616;
     color: white;
 }
 
-.agencia-de-viagens {
-    color: #ffffff;
-    opacity: 50%;
-    text-decoration: 
+.mosaico_gelado img {
+    width: 50%;
 }
 
-.agencia-mundo-gelado {
-    color: #ffffff;
+.rodape {
+    text-align: center;7y
+    background-color: #161616;
+    padding: 10px;
+    /* position: fixed; */
+    width: 100vw;
+    padding: 40px;
+    color: rgba(255, 255, 255, 0.5)
 }
 
-.texto-header {
-    color: #ffffff50;
-}
-
-.mosaico {
-    width: 70.3125%;
-    margin: 0 auto; /* Truque pra centralizar, só funciona com elementos block */
-}
-
-.subtitulo {
-    text-align: center;
-}
-
-.chamada, .mosaico-imagem {
-    width: 44.44%;
+.redes-sociais > li {
     display: inline-block;
-    margin: 5%;
-    vertical-align: middle;
-}
-
-.ilustracao > img { /* seleciona as tags img dentro da classe .conteudo-principal__imagem */
-    width: 100%;
+    padding: 35px 25px;
 }
