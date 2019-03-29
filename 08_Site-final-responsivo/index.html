@@ -3,75 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mundo Gelado</title>
+    <title>Agência Mundo Gelado</title>
     
     <link rel="stylesheet" href="./css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
 </head>
 
 <body>
     <header>
         <nav class="nav">
-            <ul class="menu__lista">
-                <li class="menu__lista_item"><a href="#">Sobre</a></li>
-                <li class="menu__lista_item"><a href="#">Destinos</a></li>
-                <li class="menu__lista_item"><a href="#">Contato</a></li>
-            </ul>
+            <div class="container">
+                <ul class="nav__menu">
+                    <li class="menu__link"><a href="#sobre">Sobre</a></li>
+                    <li class="menu__link"><a href="#destinos">Destinos</a></li>
+                    <li class="menu__link"><a href="#contato">Contato</a></li>
+
+                    <img src="img/menu-hamburger.png" alt="menu mobile" class="nav__mobile">
+                </ul>
+            </div>
         </nav>
     </header>
 
-    <section class="banner">
+<main>
+    <section class="banner transition">
         <div class="cabecalho">
-            <h1 class="mundo-gelado">Mundo Gelado</h1>
-            <h2 class="agencia-de-viagens">A agência de viagens que te leva aos lugares mais congelantes do planeta.</h2>
+            <h1 class="banner__title">Mundo Gelado</h1>
+            <h2 class="banner__subtitle">A agência de viagens que te leva aos lugares <br> mais congelantes do planeta.</h2>
                     
-            <button class="quero-saber-mais">Quero saber mais</button>
-                  
+            <a href="#" class="btn btn--primary banner-btn transition">Quero saber mais</a>
         </div>
     </section>
 
-    <section class="destaque">
+    <section class="destaque transition" id="sobre">
         <div>
-            <h3 class="apresentacao">A agência Mundo gelado</h3>
-            <p class="texto-header">Nosso diferencial é te levar para conhecer as mais lindas e geladas paisagens no nosso planeta, com conforto e segurança. 
-            Nossos pacotes são completos e oferecem uma experiência inesquecível para você.
-            Veja abaixo nossos destinos disponíveis, e se tiver alguma dúvida ou sugestão, entre em contato com a gente.</p>
+            <h3 class="about__title">A agência Mundo Gelado</h3>
+            <p>Nosso diferencial é te levar para conhecer as mais lindas e geladas paisagens <br>no nosso planeta, com conforto e segurança. 
+            <br>Nossos pacotes são completos e oferecem uma experiência inesquecível para você.
+            <br>Veja abaixo nossos destinos disponíveis, e se tiver alguma dúvida ou sugestão, <br>entre em contato com a gente.</p>
         </div>
     </section>
                 
-    <section class="mosaico">
-        <div  class="mosaico_siberia">
-            <img src="img/siberia-1.jpg" alt="Imagem da Sibéria">
+    <section id="destinos">
+        <div class="container">
+
+            <div class="destino destino_siberia">
+                <img src="img/siberia-1.jpg" alt="Foto Sibéria" class="destino--siberia_img">
+                <span class="destino__border"></span>
+
+                <div class="destino__text">
+                    <h3>Sibéria</h3>
+                    <p>O clima varia entre o clima polar e o clima continental. Na Sibéria situa-se o local habitado mais frio do mundo, a aldeia de Oymyakon.</p>
+                </div>
+            </div>
                             
-            <div>
-                <h4>Sibéria</h4>
-                 <p>O clima varia entre o clima polar e o clima continental. Na Sibéria situa-se o local habitado mais frio do mundo, a aldeia de Oymyakon.</p>
+            <section class="lugares_gelados">
+                <div>
+                        <div class="destino__groelandia">
+                            <!-- <div> -->
+                            <img src="img/groenlandia-1.jpg" alt="Imagem da Groelândia" class="destino__groelandia-img">
+                            <!-- </div> -->
+
+                            <h4>Groenlândia</h4>
+                            <p>A Groenlândia é a maior ilha do mundo e tem mais de 44 000 km de linha de costa. A população é escassa, confinada a pequenos povoados na costa. A ilha tem a segunda maior reserva de gelo do mundo, apenas ultrapassada pela Antártida.</p>
+                        </div>
+                </div>
+                        
+                <div class="mosaico_gelado">
+                        <div>
+                            <h4>Antártida</h4>
+                            <p>É o continente mais frio, mais seco, com a maior média de altitude e de maior índice de ventos fortes do planeta.[1] A temperatura mais baixa da Terra (-89,2 °C) foi registrada na Antártica, sendo a temperatura média na costa, durante o verão, de -10 °C; no interior do continente, é de -40 °C</p>
+                        </div>
+                        
+                        <!-- <div> -->
+                        <img src="img/antartida-1.jpg" alt="Imagem da Antártica" class="destino__antartida-img">
+                        <!-- </div> -->
+                </div>
+                            
             </div>
         </div>
                 
-        <section class="lugares_gelados">
-            <div class="mosaico_gelado">
-                <!-- <div> -->
-                    <img src="img/groenlandia-1.jpg" alt="Imagem da Groelândia">
-                <!-- </div> -->
-          
-                <div>
-                    <h4>Groenlândia</h4>
-                    <p>A Groenlândia é a maior ilha do mundo e tem mais de 44 000 km de linha de costa. A população é escassa, confinada a pequenos povoados na costa. A ilha tem a segunda maior reserva de gelo do mundo, apenas ultrapassada pela Antártida.</p>
-                </div>
-            </div>
-
-            <div class="mosaico_gelado">
-                <div>
-                    <h4>Antártida</h4>
-                    <p>É o continente mais frio, mais seco, com a maior média de altitude e de maior índice de ventos fortes do planeta.[1] A temperatura mais baixa da Terra (-89,2 °C) foi registrada na Antártica, sendo a temperatura média na costa, durante o verão, de -10 °C; no interior do continente, é de -40 °C</p>
-                </div>
-
-                <!-- <div> -->
-                    <img src="img/antartida-1.jpg" alt="Imagem da Antártica">
-                <!-- </div> -->
-            </div>        
         </section>
     </section>
 
@@ -113,20 +124,27 @@
                 </div>
         </section> -->
 
-    <footer class="rodape">
+        <div>
+            <!-- o iframe abra uma tela dentro de uma tela, no caso, o mapa setado dentro do site ou um site dentro de um site, embedado -->
+        </div>
+
+</main>
+
+    <footer class="rodape" id="contato">
                     
         <p>Telefone: (11) 1234-5678</p>
 
         <div>
             <ul class="redes_sociais">
-                <li><a href="https://twitter.com" target="_blank" class="twitter"><img src="./img/twitter.png"></a></li>
-                <li><a href="https://facebook.com" target="_blank" class="facebook"><img src="./img/facebook.png"></a></li>
-                <li><a href="https://youtube.com" target="_blank" class="youtube"><img src="./img/youtube.png"></a></li>
+                <li><a href="https://twitter.com" target="_blank" class="footer_twitter"><img src="./img/twitter.png"></a></li>
+                <li><a href="https://facebook.com" target="_blank" class="footer_facebook"><img src="./img/facebook.png"></a></li>
+                <li><a href="https://youtube.com" target="_blank" class="footer_youtube"><img src="./img/youtube.png"></a></li>
             </ul>
         </div>
-                
-        <p>Copyright © Agência Mundo gelado 2018</p>
         
+        <div>
+            <small>Copyright © Agência Mundo gelado 2018</small>
+        </div>
     </footer>
 </body>
 </html>
